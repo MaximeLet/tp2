@@ -14,8 +14,7 @@ services:
       - ~/.ssh:/root/.ssh
       - ~/tp2/compose/jenkins/data/:/var/jenkins_home
     ports:
-      - "8080:8080"
-      - "50000:50000"
+      - "7080:8080"
     
   master:
     image: rescapes_ionic_server
