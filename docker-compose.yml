@@ -11,8 +11,8 @@ services:
       - /tmp/jenkins/:/tmp/jenkins/
       - /usr/bin/docker:/usr/bin/docker
       - /var/run/docker.sock:/var/run/docker.sock
-      - ~/.ssh:/root/.ssh
-      - ~/tp2/compose/jenkins/data/:/var/jenkins_home
+      - ../.ssh:/root/.ssh
+      - ./compose/jenkins/data/:/var/jenkins_home
     ports:
       - "7080:8080"
     
@@ -25,7 +25,7 @@ services:
       context: .
       dockerfile: ./compose/ionic_server/Dockerfile
     volumes:
-      - ~/.ssh:/root/.ssh
+      - ../.ssh:/root/.ssh
     environment:
       - BRANCH=master
       - PORT=7000
@@ -39,7 +39,7 @@ services:
       context: .
       dockerfile: ./compose/ionic_server/Dockerfile
     volumes:
-      - ~/.ssh:/root/.ssh
+      - ../.ssh:/root/.ssh
     environment:
       - BRANCH=staging
       - PORT=7001
@@ -50,7 +50,7 @@ services:
     ports:
       - "7002:7002"
     volumes:
-      - ~/.ssh:/root/.ssh
+      - ../.ssh:/root/.ssh
     build:
       context: .
       dockerfile: ./compose/ionic_server/Dockerfile
@@ -65,5 +65,5 @@ services:
       context: .
       dockerfile: ./compose/test_server/Dockerfile
     volumes:
-      - ~/.ssh:/root/.ssh
+      - ../.ssh:/root/.ssh
     
