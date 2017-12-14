@@ -1,0 +1,65 @@
+version: '2'
+
+services:
+  jenkins:
+    image: rescapes_jenkins
+    build:
+      context: .
+      dockerfile: ./compose/jenkins/Dockerfile
+    volumes:
+      - /tmp/jenkins/:/tmp/jenkins/
+      - $(which docker):/usr/bin/docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.ssh:/root/.ssh
+      - ~/tp2/jenkins/data/:/var/jenkins_home
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    
+  master:
+    image: rescapes_ionic_server
+    ports:
+      - "7000:7000"
+    build:
+      context: .
+      dockerfile: ./compose/ionic_server/Dockerfile
+    volumes:
+      - ~/.ssh:/root/.ssh
+    environment:
+      - BRANCH=master
+      - PORT=7000
+      
+  staging:
+    image: rescapes_ionic_server
+    ports:
+      - "7001:7001"
+    build:
+      context: .
+      dockerfile: ./compose/ionic_server/Dockerfile
+    volumes:
+      - ~/.ssh:/root/.ssh
+    environment:
+      - BRANCH=staging
+      - PORT=7001
+  
+  prod:
+    image: rescapes_ionic_server
+    ports:
+      - "7002:7002"
+    build:
+      context: .
+      dockerfile: ./compose/ionic_server/Dockerfile
+    volumes:
+      - ~/.ssh:/root/.ssh
+    environment:
+      - BRANCH=prod
+      - PORT=7002
+      
+  test:
+    image: rescapes_test
+    build:
+      context: .
+      dockerfile: ./compose/test_server/Dockerfile
+    volumes:
+      - ~/.ssh:/root/.ssh
+    
