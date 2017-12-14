@@ -46,7 +46,7 @@ RUN npm install -g cordova ionic
 RUN mkdir -p /vaolo/master
 RUN mkdir -p /vaolo/staging
 RUN mkdir -p /vaolo/prod
-COPY ./ionic-serve-vaolo.sh /vaolo
+COPY ./compose/ionic_server/ionic-serve-vaolo.sh /vaolo
 RUN chmod +x /vaolo/ionic-serve-vaolo.sh 
 
 RUN mkdir -p /root/.ionic

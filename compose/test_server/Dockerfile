@@ -42,7 +42,7 @@ RUN npm -v
 RUN npm install -g cordova ionic
 
 RUN mkdir -p /vaolotest
-COPY test.sh /vaolotest
+COPY ./compose/test_server/test.sh /vaolotest
 RUN chmod +x /vaolotest/test.sh 
 
 VOLUME /root/.ssh
