@@ -3,7 +3,7 @@
 # allow saving changes, support for shared ssh credential files, and 
 # installation of additional tools required to run docker containers from the Jenkins job (this is required for project TP2)
 #
-# Note that Jenkins data files are mapped to ~/tp2/jenkins/data/ by default.  Please backup of this folder from time to time!
+# Note that Jenkins data files are mapped to ~/tp2/jenkins/data/ by default.  Please backup this folder from time to time!
 #
 # Built command: docker build -t rescapes_jenkins . 
 # 
@@ -18,6 +18,6 @@ RUN apt-get update \
       && rm -rf /var/lib/apt/lists/*
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
-COPY ./compose/jenkins/plugins.txt /usr/share/jenkins/plugins.txt
+#COPY ./compose/jenkins/plugins.txt /usr/share/jenkins/plugins.txt
 VOLUME /root/.ssh
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
+#RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
