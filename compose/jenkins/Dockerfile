@@ -19,6 +19,7 @@ RUN apt-get update \
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 COPY ./compose/jenkins/data/ /var/jenkins_home/
+RUN ls -al /var/jenkins_home/
 
 #COPY ./compose/jenkins/plugins.txt /usr/share/jenkins/plugins.txt
 VOLUME /root/.ssh
