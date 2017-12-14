@@ -1,0 +1,6 @@
+Started by user [8mha:////4DNjfhK02JQCKShFWs2u7qED+0tnTMnL3Ymt7DUDJ8K/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZu/dLi1CL9xJTczDwAo1uC48AAAAA=[0mMaxime Létourneau
+Building in workspace /var/jenkins_home/workspace/vaolo_staging
+[vaolo_staging] $ /bin/sh -xe /tmp/jenkins2166840242868645024.sh
++ sudo docker restart rescapes_staging
+rescapes_staging
+Finished: SUCCESS

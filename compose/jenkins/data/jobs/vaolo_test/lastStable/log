@@ -1,0 +1,46 @@
+Started by user [8mha:////4DNjfhK02JQCKShFWs2u7qED+0tnTMnL3Ymt7DUDJ8K/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZu/dLi1CL9xJTczDwAo1uC48AAAAA=[0mMaxime Létourneau
+Building in workspace /var/jenkins_home/workspace/vaolo_test
+[vaolo_test] $ /bin/sh -xe /tmp/jenkins5530647131583280814.sh
++ sudo docker run -v /root/.ssh:/root/.ssh rescapes_test
+Hi MaximeLet! You've successfully authenticated, but GitHub does not provide shell access.
+Cloning into 'vaolo'...
+Switched to a new branch 'test'
+Branch test set up to track remote branch test from origin.
+Already up-to-date.
+Everything up-to-date
+
+> node-sass@4.5.3 install /vaolotest/vaolo/node_modules/node-sass
+> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v4.5.3/linux-x64-57_binding.node
+Download complete
+Binary saved to /vaolotest/vaolo/node_modules/node-sass/vendor/linux-x64-57/binding.node
+Caching binary to /root/.npm/node-sass/4.5.3/linux-x64-57_binding.node
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /vaolotest/vaolo/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+
+> node-sass@4.5.3 postinstall /vaolotest/vaolo/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /vaolotest/vaolo/node_modules/node-sass/vendor/linux-x64-57/binding.node
+Testing binary
+Binary is fine
+added 773 packages in 138.454s
+
+> vaolo@0.0.1 test-ci /vaolotest/vaolo
+> karma start ./test-config/karma.conf.js --single-run
+
+
+webpack: Compiled successfully.
+webpack: Compiling...
+webpack: Compiled with warnings.
+
+[32m14 12 2017 14:30:06.667:INFO [karma]: [39mKarma v1.7.1 server started at http://0.0.0.0:9876/
+[32m14 12 2017 14:30:06.675:INFO [launcher]: [39mLaunching browser ChromeHeadlessNoSandbox with unlimited concurrency
+[32m14 12 2017 14:30:07.336:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 12 2017 14:30:11.105:INFO [HeadlessChrome 0.0.0 (Linux 0.0.0)]: [39mConnected on socket McwMq0UnXOJ_q7KPAAAA with id 87038518
+.
+HeadlessChrome 0.0.0 (Linux 0.0.0): Executed 1 of 1 SUCCESS (1.851 secs / 1.763 secs)
+Finished: SUCCESS
