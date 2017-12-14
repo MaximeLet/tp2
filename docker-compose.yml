@@ -3,6 +3,7 @@ version: '2'
 services:
   jenkins:
     image: rescapes_jenkins
+    container_name: rescapes_jenkins
     build:
       context: .
       dockerfile: ./compose/jenkins/Dockerfile
@@ -18,6 +19,7 @@ services:
     
   master:
     image: rescapes_ionic_server
+    container_name: rescapes_master
     ports:
       - "7000:7000"
     build:
@@ -31,6 +33,7 @@ services:
       
   staging:
     image: rescapes_ionic_server
+    container_name: rescapes_staging
     ports:
       - "7001:7001"
     build:
@@ -44,19 +47,21 @@ services:
   
   prod:
     image: rescapes_ionic_server
+    container_name: rescapes_prod
     ports:
       - "7002:7002"
+    volumes:
+      - ~/.ssh:/root/.ssh
     build:
       context: .
       dockerfile: ./compose/ionic_server/Dockerfile
-    volumes:
-      - ~/.ssh:/root/.ssh
     environment:
       - BRANCH=prod
       - PORT=7002
       
   test:
     image: rescapes_test
+    container_name: rescapes_test
     build:
       context: .
       dockerfile: ./compose/test_server/Dockerfile
