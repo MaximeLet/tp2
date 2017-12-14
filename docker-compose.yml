@@ -8,7 +8,7 @@ services:
       dockerfile: ./compose/jenkins/Dockerfile
     volumes:
       - /tmp/jenkins/:/tmp/jenkins/
-      - $(which docker):/usr/bin/docker
+      - /usr/bin/docker:/usr/bin/docker
       - /var/run/docker.sock:/var/run/docker.sock
       - ~/.ssh:/root/.ssh
       - ~/tp2/jenkins/data/:/var/jenkins_home
