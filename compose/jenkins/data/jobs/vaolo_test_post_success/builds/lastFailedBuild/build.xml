@@ -4,23 +4,28 @@
     <hudson.model.CauseAction>
       <causeBag class="linked-hash-map">
         <entry>
-          <hudson.model.Cause_-UserIdCause>
-            <userId>admin</userId>
-          </hudson.model.Cause_-UserIdCause>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>vaolo_test</upstreamProject>
+            <upstreamUrl>job/vaolo_test/</upstreamUrl>
+            <upstreamBuild>3</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause/>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
           <int>1</int>
         </entry>
       </causeBag>
     </hudson.model.CauseAction>
   </actions>
-  <queueId>11</queueId>
-  <timestamp>1513263361049</timestamp>
-  <startTime>1513263361077</startTime>
+  <queueId>2</queueId>
+  <timestamp>1513283722789</timestamp>
+  <startTime>1513283722797</startTime>
   <result>FAILURE</result>
-  <duration>3054</duration>
+  <duration>135</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/jenkins_home/workspace/vaolo_test_post_success</workspace>
+  <workspace>/var/jenkins_home/jobs/vaolo_test_post_success/workspace</workspace>
   <hudsonVersion>2.89.2</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>
   <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>

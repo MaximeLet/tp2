@@ -1,11 +1,14 @@
-Started by user [8mha:////4DNjfhK02JQCKShFWs2u7qED+0tnTMnL3Ymt7DUDJ8K/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZu/dLi1CL9xJTczDwAo1uC48AAAAA=[0mMaxime Létourneau
-Building in workspace /var/jenkins_home/workspace/vaolo_test_post_success
-[vaolo_test_post_success] $ /bin/sh -xe /tmp/jenkins4888229888748511476.sh
-+ /var/jenkins_home/deploy.sh
+Started by upstream project "[8mha:////4L7JkAs6SBkebylj/pNJogOj/oUDpwdbeSz/+4ep4OhiAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2yxPyc/PiS1OISfQBmbkvexQAAAA==[0mvaolo_test" build number [8mha:////4H0xRkXo2uJ6FjOHGJXScJJFswQnWlv6oNyhbNi2U8kpAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwk/bLE/Jz8+JLU4hJ9EwBPqQfmxgAAAA==[0m4
+originally caused by:
+ Started by timer
+Building in workspace /var/jenkins_home/jobs/vaolo_test_post_success/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins3120755625672368518.sh
++ /bin/bash /var/jenkins_home/deploy.sh
 Hi MaximeLet! You've successfully authenticated, but GitHub does not provide shell access.
 Cloning into 'vaolo'...
 Switched to a new branch 'staging'
 Branch staging set up to track remote branch staging from origin.
 Already up-to-date.
 Everything up-to-date
+Triggering a new build of [8mha:////4G0l5mlsiJH4meiDpthnOLXMWqrRncFV9UbH9Gg0izkhAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/az8JP2yxPyc/PjiksR0oCH6AFiUEq/IAAAA[0mvaolo_staging
 Finished: SUCCESS

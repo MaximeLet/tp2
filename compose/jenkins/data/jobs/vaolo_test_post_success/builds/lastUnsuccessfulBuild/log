@@ -1,23 +1,9 @@
-Started by user [8mha:////4DNjfhK02JQCKShFWs2u7qED+0tnTMnL3Ymt7DUDJ8K/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZu/dLi1CL9xJTczDwAo1uC48AAAAA=[0mMaxime Létourneau
-Building in workspace /var/jenkins_home/workspace/vaolo_test_post_success
-[vaolo_test_post_success] $ /bin/sh -xe /tmp/jenkins2989360583476299682.sh
+Started by upstream project "[8mha:////4L7JkAs6SBkebylj/pNJogOj/oUDpwdbeSz/+4ep4OhiAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2yxPyc/PiS1OISfQBmbkvexQAAAA==[0mvaolo_test" build number [8mha:////4CX5e51BFLnIr9hrnmY7mYKpV+RaEpzoePON168Gm9UfAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwk/bLE/Jz8+JLU4hJ9YwDsPGN4xgAAAA==[0m3
+originally caused by:
+ Started by user [8mha:////4FA1CpF/ru7WI2cNm6MB+YH1otlKXEbguGafzEGkK3yRAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/jobs/vaolo_test_post_success/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins8082626443543683760.sh
 + /var/jenkins_home/deploy.sh
-Hi MaximeLet! You've successfully authenticated, but GitHub does not provide shell access.
-Cloning into 'vaolo'...
-usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
-   or: git remote set-url --add <name> <newurl>
-   or: git remote set-url --delete <name> <url>
-
-    --push                manipulate push URLs
-    --add                 add URL
-    --delete              delete URLs
-
-/var/jenkins_home/deploy.sh: line 8: git@github.com:MaximeLet/vaolo.git: No such file or directory
-Switched to a new branch 'staging'
-Branch staging set up to track remote branch staging from origin.
-Already up-to-date.
-fatal: remote error: 
-  You can't push to git://github.com/MaximeLet/vaolo.git
-  Use https://github.com/MaximeLet/vaolo.git
+/tmp/jenkins8082626443543683760.sh: 2: /tmp/jenkins8082626443543683760.sh: /var/jenkins_home/deploy.sh: Permission denied
 Build step 'Execute shell' marked build as failure
 Finished: FAILURE

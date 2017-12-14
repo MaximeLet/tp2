@@ -24,7 +24,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>/var/jenkins_home/deploy.sh
+      <command>/bin/bash /var/jenkins_home/deploy.sh
 </command>
     </hudson.tasks.Shell>
   </builders>
