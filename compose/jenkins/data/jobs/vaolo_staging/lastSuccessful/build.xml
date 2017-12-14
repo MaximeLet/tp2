@@ -4,23 +4,35 @@
     <hudson.model.CauseAction>
       <causeBag class="linked-hash-map">
         <entry>
-          <hudson.model.Cause_-UserIdCause>
-            <userId>admin</userId>
-          </hudson.model.Cause_-UserIdCause>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>vaolo_test_post_success</upstreamProject>
+            <upstreamUrl>job/vaolo_test_post_success/</upstreamUrl>
+            <upstreamBuild>13</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>vaolo_test</upstreamProject>
+                <upstreamUrl>job/vaolo_test/</upstreamUrl>
+                <upstreamBuild>4</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
           <int>1</int>
         </entry>
       </causeBag>
     </hudson.model.CauseAction>
   </actions>
-  <queueId>13</queueId>
-  <timestamp>1513265839801</timestamp>
-  <startTime>1513265839815</startTime>
+  <queueId>7</queueId>
+  <timestamp>1513285450133</timestamp>
+  <startTime>1513285450154</startTime>
   <result>SUCCESS</result>
-  <duration>11871</duration>
+  <duration>11917</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/jenkins_home/workspace/vaolo_staging</workspace>
+  <workspace>/var/jenkins_home/jobs/vaolo_staging/workspace</workspace>
   <hudsonVersion>2.89.2</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>
   <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
