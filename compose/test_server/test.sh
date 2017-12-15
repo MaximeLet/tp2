@@ -3,6 +3,7 @@
 # Automates testing of current project following changes in the master branch
 #
 ssh -T git@github.com
+rm -rf vaolo
 git clone git://github.com/MaximeLet/vaolo.git
 cd vaolo
 git remote set-url origin git@github.com:MaximeLet/vaolo.git
