@@ -66,4 +66,3 @@ services:
       dockerfile: ./compose/test_server/Dockerfile
     volumes:
       - ../.ssh:/root/.ssh
-    
