@@ -10,8 +10,11 @@ Configurer une machine docker et docker-compose.
 
 ## Installation
 
-> cd ~
-> git clone https://github.com/MaximeLet/tp2
+
+`
+cd ~
+git clone https://github.com/MaximeLet/tp2
+`
 
 
 ## Construction des différents images
