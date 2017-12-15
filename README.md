@@ -50,10 +50,10 @@ La version recente du projet est pré-installé et les images sont à jour.
 Le projet est installé dans le répertoire ~rescapes/tp2
 
 # Description des ports utilisés
-7080: serveur jenkins
-7000: serveur ionic pour la branche master (développement)
-7001: serveur ionic pour la branche staging
-7002: serveur ionic pour la branche prod
+- 7080: serveur jenkins
+- 7000: serveur ionic pour la branche master (développement)
+- 7001: serveur ionic pour la branche staging
+- 7002: serveur ionic pour la branche prod
 
 
 
