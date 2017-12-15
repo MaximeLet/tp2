@@ -10,19 +10,24 @@ Configurer une machine docker et docker-compose.
 
 ## Installation
 
-
-`cd ~`
-`git clone https://github.com/MaximeLet/tp2`
+```
+cd ~
+git clone https://github.com/MaximeLet/tp2`
+```
 
 
 ## Construction des différents images
 
-> cd ~/tp2
-> docker-compose build
+```
+cd ~/tp2
+docker-compose build
+```
 
 ## Démarrer les dockers
 
-> docker-compose up
+```
+docker-compose up
+```
 
 # Configuration ssh
 Le système suppose que ssh est pré-configurer pour une connection automatique avec Github.  Voir notes dans 
@@ -33,7 +38,9 @@ Le système présentment installé sur les deux serveurs suivants
 
 ## http://138.197.157.84 - serveur personnel temporaire
 Se connecter via
-> ssh root@138.197.157.84  (mot de passe disponible sur demande)
+```
+ssh root@138.197.157.84  # mot de passe fourni via Mio
+```
 et utiliser les commandes ci-dessus
 
 ## http://159.203.21.122 - serveur fourni par le professeur
